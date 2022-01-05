@@ -1,0 +1,41 @@
+/*
+    
+Convention to accommodate styles
+    1.Positioning
+    2.Box model
+    3.Tipografy
+    4.Visual themes
+    5. Others
+ */
+ :root{
+    /* colores */
+    --bitcoin-orange:#F7931A;
+    --soft-orange: #ffe9d5;
+    --secondary-blue: #1a9af7;
+    --soft-blue: #e7f5ff;
+    --warm-black: #282623;
+    --black: #201e1c;
+    --grey: #bababa;
+    --off-white: #faf8f7;
+    --just-white: #fff;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+   font-size: 62.5%;
+   line-height: 1.15; /* 1 */
+   -webkit-text-size-adjust: 100%; /* 2 */
+   font-family:'DM Sans', sans-serif;
+ }
+
+ .header-container{
+     width: 100vw;
+     height: 33.4rem;
+     background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+ }
+ 
+ 
