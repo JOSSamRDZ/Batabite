@@ -35,7 +35,15 @@ html {
  .header-container{
      width: 100vw;
      height: 33.4rem;
-     background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+     
  }
- 
+ .header--title-contaier{
+     width: 100%;
+     min-width: 28.8rem;
+     max-width: 98.8rem;
+     height: 21.8rem;
+     margin-top: 4.0rem;
+     text-align: center;
+     align-self: center;
+ }
  
