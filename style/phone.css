@@ -33,17 +33,78 @@ html {
  }
 
  .header-container{
-     width: 100vw;
-     height: 33.4rem;
-     
- }
- .header--title-contaier{
+   
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
      width: 100%;
+     min-width: 32rem;
+     height: 33.4rem;
+     text-align: center;
+     background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+ }
+
+ .header-container img{
+    
+     width: 15rem;
+     height: 2.4rem;
+     margin-top: 6rem;
+     align-self: center;
+ }
+
+ .header--title-contaier{
+     width: 90%;
      min-width: 28.8rem;
-     max-width: 98.8rem;
+     max-width: 90rem;
      height: 21.8rem;
-     margin-top: 4.0rem;
+     margin-top: 4rem;
      text-align: center;
      align-self: center;
  }
- 
+
+ .header--title-contaier h1{
+     font-weight: bold;
+     font-size: 2.4rem;
+     line-height: 2.6rem;
+     color: var(--just-white);
+
+ }
+
+ .header--title-contaier p{
+    padding-top: 2.5rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
+
+ }
+
+ .header--title-contaier .header--button{
+     position: absolute;
+     top: calc(85% - 15px);
+	 left: calc(50% - 114.5px);
+     display: block;
+     margin-top: 3.5rem;
+     padding: 1.5rem;
+     width: 22.9rem;
+     height: 4.8rem;
+     background-color: var(--off-white);
+     /* sopmbras */
+     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+     border: none;
+     border-radius: .5rem;
+     font-size: 1.4rem;
+     font-weight: bold;
+     text-decoration: none;
+     color: var(--warm-black);
+    
+ }
+
+ .header--button span{
+     display: inline-block;
+     width: 1.3rem;
+     height: .8rem;
+     margin-left: 1rem;
+     background-image: url('../assets/icons/down-arrow.svg');
+ }
