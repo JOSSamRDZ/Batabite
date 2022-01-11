@@ -110,13 +110,13 @@ html {
  }
 /* Main */
 .mian{
-    width: 100vw;
+    width: 100%;
     height: auto;
     background-color: var(--just-white);
 }
 
 .main-exchange-container{
-    width: 100vw;
+    width: 100%;
     height: auto;
     padding-top: 8rem;
     padding-bottom: 3rem;
