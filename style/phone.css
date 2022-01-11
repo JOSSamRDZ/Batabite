@@ -245,10 +245,11 @@ html {
 
 }
 
-.main-commissions-table__container{
-    width: 90%;
-    min-width: 23rem;
-    max-width: 30rem;
-    margin: 0 auto;
-    height: 25rem;
+.main-currency-tables .comissions--down{
+    text-align: left;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: #1a9af7;
+    margin-bottom: 1.5rem;
 }
