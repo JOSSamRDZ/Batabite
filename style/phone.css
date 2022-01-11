@@ -244,3 +244,11 @@ html {
     background-repeat: no-repeat;
 
 }
+
+.main-commissions-table__container{
+    width: 90%;
+    min-width: 23rem;
+    max-width: 30rem;
+    margin: 0 auto;
+    height: 25rem;
+}
