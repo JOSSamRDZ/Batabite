@@ -114,7 +114,7 @@ html {
     height: auto;
     background-color: var(--just-white);
 }
-
+/* exchange section */
 .main-exchange-container{
     width: 100%;
     height: auto;
@@ -288,4 +288,138 @@ html {
     font-size: 1.2rem;
     line-height: 1.5rem;
     color: var(--warm-black);
+}
+
+/* Detail section */
+.main-product-detail{
+    position: relative;/* Eeste contenedor tiene un posicion relative,para que a continuacion en la siguiente etiqueta podamos posicionar el logo con absolute */
+    width: 100%;
+    min-width: 32rem;
+    height: auto;
+    padding: 2rem 1rem; /* Aqui podemos darle un padding para que las tarjetas que hagamos a futuro si les damos un width del 100% se ajusten y centren solas, grcias la paddin de la etiqueta contenedora */
+    background-color: var(--warm-black);
+}
+
+.product-deail__batata-logo{
+    position: absolute;/* Solo podemos utilizar el absolute cuando la etiqueta contenedora del elemento tenga un position relative */
+    width: 4rem;
+    height: 2.5rem;
+    left:calc(50% - 2rem) ;
+    top: -1rem;
+    background-image: url("../assets/icons/batata.svg");
+
+}
+
+.main-product-detail__title {
+    width: 90%;
+    min-width: 28rem;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 5rem;
+    text-align: center;
+
+}
+
+.main-product-detail__title h2 {
+    margin-bottom: 2.4rem ;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    font-style: normal;
+    color: var(--just-white);
+}
+
+.main-product-detail__title p {
+    margin-bottom: 2.6rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-style: normal;
+    color: #808080;
+}
+
+.product-cards-contianer{
+ 
+    
+}
+
+.product-card-detail{
+    width: 90%;
+    min-width: 28rem;
+    max-width: 40rem;
+    height: 15rem;
+    margin: 1.5rem auto;
+    background-color: var(--black);
+    padding: 1.5rem;
+    border-radius: .4rem;
+    box-shadow: 0 .4rem 8px rgba(0,0,0, 0.16);
+
+    
+}
+
+.product-card-detail .clock{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-bottom: 1rem;
+    background-image: url('../assets/icons/clock.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ 
+
+}
+.product-card-detail .eye{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-bottom: 1rem;
+    background-image: url('../assets/icons/eye.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ 
+
+}
+
+.product-card-detail .dollar{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-bottom: 1rem;
+    background-image: url('../assets/icons/dollar-sign.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ 
+
+}
+
+.product-card-detail .check{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-bottom: 1rem;
+    background-image: url('../assets/icons/check-circle.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ 
+
+}
+
+.product-card-detail .product-card-detail__title{
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    font-weight: bold;
+    text-align: left;
+    color: var(--just-white);
+}
+
+.product-card-detail .product-card-detail__body{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+
 }
