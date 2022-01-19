@@ -485,6 +485,7 @@ html {
     overflow-x: scroll;/* Estas propiedades sirven para crean un scroll en css */
     overscroll-behavior-x:contain;
     scroll-snap-type: x proximity;
+    justify-content: center;
 }
 /* .plans-container__slider article{
     margin-left: 1.5rem;
