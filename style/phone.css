@@ -450,7 +450,7 @@ html {
 .main-plans-container{
     width: 100%;
     min-width: 32rem;
-    padding-bottom: 7rem;
+    /* padding-bottom: 7rem; */
     text-align: center;
     background-color: var(--off-white);
 }
@@ -478,14 +478,26 @@ html {
     line-height: 1.8rem;
     color: #757575;
 }
-
+.plans-container__slider{
+    display: flex;
+  /*   gap: .9rem; pronto se podra usar gap en la mayoria de navegadores, sirve para der espacion en un seccion de scroll overflow */
+    height: 31.6rem;
+    overflow-x: scroll;/* Estas propiedades sirven para crean un scroll en css */
+    overscroll-behavior-x:contain;
+    scroll-snap-type: x proximity;
+}
+/* .plans-container__slider article{
+    margin-left: 1.5rem;
+} */
 .plans-container__card{
     position: relative;
+    scroll-snap-align: center;/* El escroll siempre se va a centrar en el elemento */
     width: 70%;
-    min-width: 23rem;
-    max-width: 30rem;
+    min-width: 19rem;
+    max-width: .5rem;
     height: 25rem;
-    margin: 5rem auto 0;
+    
+    margin: 5rem 2rem 0rem;
     padding: 0 1.5rem;
     background-color: var(--just-white);
     border-radius: 1.5rem;
@@ -571,7 +583,7 @@ html {
 .plan-info-container__ca{
     width: 15rem;
     height: 4.8rem;
-    margin-top: 2rem;
+    margin-top: 4rem;
     background-color: #faf8f7;
     border-radius: .4rem;
     border: var(--bitcoin-orange) solid .2rem;
@@ -589,4 +601,35 @@ html {
     height: 2rem;
     background-image: url("../assets/icons/orange-right-arrow.svg");
    vertical-align: text-bottom;/* Para alinear el texto con el icono */
+}
+
+/* Footer */
+footer{
+    display: flex;
+    width: 100%;
+    height: 15rem;
+    background-color: var(--bitcoin-orange);
+}
+
+footer section{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .left ul{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+
+.left li{
+    margin: 1rem 0;
+}
+
+.left a {
+    text-decoration: none;
+    color: var(--just-white );
 }
